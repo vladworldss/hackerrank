@@ -31,7 +31,7 @@ def print_full_name(a, b):
 
 
 def count_substring(string, sub_string):
-    from string import ascii_letters
+    from _string import ascii_letters
 
     rule = ascii_letters + ''.join((str(x) for x in range(10)))
     string = string[:200]
@@ -53,7 +53,7 @@ def count_substring_test():
 
 
 def string_validators(line=None):
-    from string import ascii_letters
+    from _string import ascii_letters
 
     if line is None:
         line = input().strip()[:1000]
