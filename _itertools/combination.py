@@ -1,5 +1,5 @@
 # coding: utf-8
-from itertools import combinations
+from itertools import combinations, combinations_with_replacement
 
 
 def _combinations():
@@ -14,4 +14,14 @@ def _combinations():
         for x in pers:
             print(''.join(x))
 
-_combinations()
+
+def _combinations_with_replacement():
+    S, k = input().split()
+    k = int(k)
+    if not 0 < k <= len(S):
+        return
+    S = ''.join(sorted((x for x in S if x.isupper())))
+    for x in list(combinations_with_replacement(S, k)):
+        print(''.join(x))
+
+_combinations_with_replacement()
