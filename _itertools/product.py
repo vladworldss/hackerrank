@@ -7,3 +7,5 @@ def _product():
     A = foo()
     B = foo()
     print(*product(A, B))
+
+_product()
