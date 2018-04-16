@@ -1,5 +1,6 @@
 from itertools import combinations
 
+
 def _prob():
     size = int(input().strip())
     s = input().strip().split()
