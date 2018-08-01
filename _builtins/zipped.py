@@ -5,11 +5,11 @@ from statistics import mean
 
 if __name__ == '__main__':
     N, X = map(int, input().split())
-    if (0<N<=100) and (0<X<=100):
+    if (0 < N <= 100) and (0 < X <= 100):
         studs = [[float(x) for x in input().split()] for i in range(X)]
         results = zip(*studs)
         for x in results:
-        	print(mean(x))
+            print(mean(x))
         
 # INPUT
 """
